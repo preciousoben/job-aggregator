@@ -63,7 +63,7 @@ def _embedding_score(title: str, description: str, resume_text: str, api_key: st
             headers={"Authorization": f"Bearer {api_key}"},
             json={
                 "input": [resume_text, f"{title}\n\n{description}"],
-                "model": "voyage-3.5",
+                "model": "voyage-4-lite",
                 "input_type": "document",
             },
             timeout=20,
