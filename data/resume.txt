@@ -1,38 +1,66 @@
-PLACEHOLDER — replace this file with your actual resume text before turning
-on embedding-based scoring (see README "Setup step 3"). This is built from
-your stored profile facts only, as a stand-in so the pipeline runs end to
-end today; it's much thinner than your real resume and will produce worse
-fit scores until you swap it out.
-
-Precious Oben — Data Analyst / Data Engineer / Analytics Engineer
-
-Core technical stack: SQL (MySQL, PostgreSQL, BigQuery), Python (Pandas,
-NumPy), R, dbt, ETL/ELT pipelines, medallion architecture, data modeling,
-Power BI (PL-300 certified), Looker/LookML, Looker Studio, Tableau, GCP,
-BigQuery, Snowflake, Google Analytics, Git/GitHub, Odoo, ServiceNow,
-Dynamics 365.
-
-Experience: Data Analytics Instructor at Landmark University (SQL and
-Python, April 2024–present). Software Analyst at Cathena, financial systems
-and data (June–Sept 2024). Freelance data analyst, e-commerce (Dec 2023–May
-2024). Junior Data Analyst at Urologist-cm, clinical data pipelines (Jan–June
-2023).
-
-Education: MSc Computer Engineering, University of Buea (in progress, GPA
-3.85). MTech Computer Engineering, University of Buea (2021–2023, GPA 3.75,
-Best Graduating Student). BTech Computer Engineering, University of Buea
-(2018–2021).
-
-Certifications: Google Data Analytics Professional Certificate. Microsoft
-Power BI Data Analyst Associate (PL-300).
-
-Portfolio projects: FinFlow Analytics — end-to-end fintech payments pipeline
-using Python, Snowflake (medallion architecture), dbt Cloud, n8n, Power
-Automate, Power BI. SaaS Marketing Analytics — automated dbt reporting
-pipeline, reduced reporting turnaround from 2 days to under 4 hours (96%
-efficiency gain). ClickHouse technical evaluation for a Cameroonian telecom
-company (data warehouse replacement analysis).
-
-Seeking: remote Data Analyst, Data Engineer, Analytics Engineer, or BI
-Analyst roles, ideally at small companies (1-50 employees, up to 200), with
-international or EOR-capable employers open to hiring from Cameroon.
+PRECIOUS OBEN
+Data Engineer | Data Analyst | Product Analyst
+Buea, Cameroon (Remote, GMT+1) | (+237) 673-572-933 | epoharaoben18@gmail.com | linkedin.com/in/preciousoben | preciousoben.com | github.com/preciousoben
+PROFESSIONAL SUMMARY
+Data Engineer and Data Analyst with 3+ years of experience designing end-to-end ETL/ELT pipelines, data warehouses, and data quality systems across fintech, e-commerce, and clinical domains. Hands-on experience with dbt Cloud, Snowflake, SQL (MySQL, PostgreSQL, BigQuery), Python, and data modeling, including medallion-architecture pipelines with automated quality checks, quarantine handling for bad data, and workflow automation via n8n. Owns pipelines end to end, from source ingestion and schema design through monitoring, troubleshooting, and downstream reporting. Experienced working with distributed teams in fast-paced environments.
+CORE COMPETENCIES & TECHNICAL SKILLS
+Data Engineering & Pipelines: End-to-End ETL/ELT Pipelines, dbt Cloud, Medallion Architecture, Data Modeling, Data Schema Design, Data Quality & Testing, Data Quarantine Design, Workflow Automation (n8n), Data Warehousing, Single Source of Truth Implementation
+Programming & Query Languages: SQL (MySQL, PostgreSQL, BigQuery, Snowflake), Python (Pandas, NumPy, Faker), R, Git/GitHub
+Cloud & Data Platforms: Snowflake, Google Cloud Platform (GCP), BigQuery, AWS (concepts), Vertex AI (exposure)
+Monitoring & Troubleshooting: Pipeline Monitoring, Root Cause Analysis, Data Validation & Testing Scripts, Referential Integrity Checks, Automated Quality Gates
+BI & Visualization: Power BI (PL-300 Certified), Looker Studio, Tableau, Looker/LookML, Google Sheets, Self-Service Analytics, Data Storytelling
+Product & Business Analytics: User Behavior Analysis, KPI Tracking, A/B Testing & Experimentation, Retention Analysis, Predictive Modeling
+Project Management & Collaboration: Cross-Functional Stakeholder Partnership, Translating Business Requirements to Technical Solutions, Remote Team Collaboration, Asana
+PROFESSIONAL EXPERIENCE
+Volunteer & Speaker Operations Analyst
+Data Changemakers (Non-profit) | Canada | Remote | May 2026 - Present
+•	Led a volunteer experience redesign initiative for a 2,000+ member data community, mapping the full volunteer journey from onboarding to active project contribution.
+•	Crafted and launched a volunteer experience survey that collected 500+ responses to inform a tailored, data-driven volunteer engagement strategy.
+•	Launched a new volunteer engagement channel and tracked participation metrics, growing active participant engagement from 5% to 45% within 2 months.
+•	Created and managed a 20-step project plan in Asana for the engagement channel’s planning and deployment, assigning workstreams to team members before migrating tracking to Notion.
+•	Designed an end-to-end speaker programming pipeline with a 27-stage checklist spanning vetting through post-webinar follow-up, standardizing coordination across the committee.
+•	Scoped and vetted 3 speakers within one month for the organization’s monthly webinar series, coordinating logistics from outreach through post-event follow-up.
+Data Analytics Instructor & Analyst (Part-time)
+Landmark University | Buea, Cameroon | On-site | April 2024 - Present
+•	Established end-to-end data pipelines from extraction to visualization for institutional reporting, cutting query execution time by 40% through optimized SQL design and indexing.
+•	Authored and delivered SQL and Python analytics curriculum for 50+ stakeholders (students), building practical data engineering and analytics skills through applied pipeline projects.
+•	Implemented data quality and validation processes across departmental datasets, reducing reporting errors by 60% while managing multiple concurrent projects.
+•	Deployed Power BI and Looker Studio dashboards for departmental performance tracking, enabling self-service analytics that improved stakeholder engagement by 30%.
+Software Analyst | Financial Systems & Data Analytics
+Cathena | Douala, Cameroon | Hybrid | June 2024 - September 2024
+•	Engineered secure data migration pipelines for 50,000+ financial records across ERP systems (Odoo, ServiceNow, Dynamics 365), achieving 100% accuracy and GDPR/CCPA compliance while eliminating data silos across all three systems.
+•	Developed 30+ data validation and testing scripts that maintained 99.9% post-migration data integrity, enabling critical financial decisions to be made on clean, verified data.
+•	Deployed automated Power BI dashboards for Finance, Product, and Engineering teams, translating business questions into self-service analytics that reduced client reporting costs by 30%.
+•	Managed end-to-end data flows across operational systems with a 90% issue resolution rate.
+Junior Data Analyst | Data Pipeline Development
+Urologist-cm | Buea, Cameroon | On-site | January 2023 - June 2023
+•	Constructed end-to-end ETL pipelines in SQL/MySQL to extract, transform, and load clinical data from source systems, achieving 99% accuracy and centralizing reporting into one reliable system.
+Freelance Data Analyst
+Self-Employed | Remote | December 2023 - May 2024
+•	Analyzed transactional and behavioral data for 5+ e-commerce clients using Python and Google Analytics, delivering data-driven strategies that increased sales by 40% within 3 months.
+•	Ran A/B tests on conversion funnels and presented findings to non-technical stakeholders, achieving 15% conversion improvement and 10% bounce rate reduction.
+KEY ANALYTICAL PROJECTS
+Finflow Analytics - Snowflake & dbt Cloud Data Warehouse Pipeline
+•	Built a fintech data warehouse simulation using a medallion architecture in Snowflake, provisioned on AWS with S3-backed storage (Bronze, Silver, Quarantine, Gold), processing 4 source tables and approximately 21,000 records generated in Python (Faker and Pandas) with intentional data quality issues: duplicates, missing values, format errors, and orphaned transaction records.
+•	Developed 10 version-controlled dbt Cloud models (tracked in GitHub) to deduplicate, type-cast, and standardize dates, routing unfixable records to a persistent quarantine table rather than silently dropping them.
+•	Structured 3 Gold-layer data mart tables with predefined KPIs (MRR, CAC, LTV) for self-serve analytics, giving the team one consistent view of core business metrics.
+•	Automated the pipeline with a 7-step n8n workflow: a daily 6 AM trigger runs the dbt Cloud job, waits 30 seconds, then uses if/else branching on the test results to route failures to an Outlook alert, maintaining a 100% successful run rate with zero failures to date.
+•	Connected 3 Power BI dashboards (Analytics, Unit Economics, Transaction Intelligence), each refreshed independently via Power Automate on a recurring schedule.
+P2P Payment Feature Analytics - Fintech / Crypto Pipeline
+•	Set up an end-to-end BigQuery analytics pipeline using two-layer medallion architecture, ingesting 1,000 users and 10,000 events; automated quality checks resolved duplicate IDs, NULLs, and timestamp anomalies before data promotion.
+•	Modelled 7 KPIs (total feature users, total transactions, total USD volume, total BTC volume, average daily users, average daily transactions, average transactions per user) using CTEs with automated row-count, null-rate, and referential integrity tests; connected clean layer to a Looker Studio executive dashboard tracking DAU, transaction status, and feature adoption.
+•	Surfaced 90.2% transaction success rate, 38.22% feature adoption among active users, and $729K in tracked volume; delivered a data-backed recommendation on feature scaling strategy.
+EDUCATION
+Master of Science (MSc), Computer Engineering | GPA: 3.85/4.0
+University of Buea - College of Technology, Cameroon | October 2024 - December 2025
+Master of Technology (MTech), Computer Engineering | GPA: 3.75/4.0
+University of Buea - College of Technology, Cameroon | October 2021 - December 2023
+Award: Best Graduating Student in Computer Engineering Department
+Bachelor of Technology (BTech), Computer Engineering
+University of Buea - College of Technology, Cameroon | October 2018 - December 2021
+CERTIFICATIONS & PROFESSIONAL DEVELOPMENT
+•	Google Data Analytics Professional Certificate.
+•	Microsoft Power BI Data Analyst Associate (PL-300).
+ADDITIONAL INFORMATION
+Languages: English (Fluent, Native proficiency), French (Intermediate, B2 Level)
+Technical Setup: Dedicated home workspace with reliable fiber internet and video conferencing setup
