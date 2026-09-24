@@ -1,10 +1,25 @@
 """Himalayas official public API — no key needed.
 https://himalayas.app/jobs/api/search?q=<term>&page=<n>
-Confirmed via docs 2026-09-24."""
+Confirmed via docs 2026-09-24. NOTE: despite the docs saying pubDate is
+always an ISO 8601 string, real responses have been observed returning a
+raw Unix epoch integer instead (confirmed 2026-09-24 from live sheet data)
+— _normalize_date handles both."""
+from datetime import datetime, timezone
 from src.http import get_json
 from src.models import Posting
 
 SEARCH_URL = "https://himalayas.app/jobs/api/search"
+
+
+def _normalize_date(value):
+    if value is None:
+        return None
+    if isinstance(value, (int, float)):
+        try:
+            return datetime.fromtimestamp(value, tz=timezone.utc).isoformat()
+        except (ValueError, OSError, OverflowError):
+            return None
+    return value
 
 
 def fetch(query: str, max_pages: int = 3) -> list[Posting]:
@@ -25,9 +40,9 @@ def fetch(query: str, max_pages: int = 3) -> list[Posting]:
                 location=location,
                 url=job.get("applicationLink", ""),
                 source="Himalayas",
-                posted_date=job.get("pubDate"),
+                posted_date=_normalize_date(job.get("pubDate")),
                 description=job.get("excerpt", "") or "",
             ))
-        if len(jobs) < 20:  # last page (max page size is 20 per the docs)
+        if len(jobs) < 20:
             break
     return out
