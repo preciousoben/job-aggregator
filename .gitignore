@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+service-account.json
+data/postings.csv
+data/postings_archive.csv

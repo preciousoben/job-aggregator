@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
+<channel>
+<title>We Work Remotely</title>
+<item>
+<title>Welltech: Senior Data Engineer (Redshift)</title>
+<link>https://weworkremotely.com/remote-jobs/welltech-senior-data-engineer-redshift</link>
+<pubDate>Wed, 03 Sep 2026 12:00:00 +0000</pubDate>
+<region>Anywhere in the World</region>
+<category>Data</category>
+<description>On-site in Cyprus with relocation support.</description>
+</item>
+<item>
+<title>SomeCo: Senior Ruby Developer</title>
+<link>https://weworkremotely.com/remote-jobs/someco-ruby-developer</link>
+<pubDate>Wed, 03 Sep 2026 12:00:00 +0000</pubDate>
+<region>Anywhere in the World</region>
+<category>Programming</category>
+<description>Not a data role, should be filtered out.</description>
+</item>
+</channel>
+</rss>

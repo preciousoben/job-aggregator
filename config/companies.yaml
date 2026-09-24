@@ -1,0 +1,35 @@
+# Known company slugs per ATS platform, seeded from prior manual pulls
+# (2026-09-23 / 2026-09-24). This list grows over time via
+# src/discovery/*.py, which checks newly-found company names against every
+# platform below and appends anything that resolves. Hand-add here too
+# whenever you spot a small company's board directly.
+
+ashby:
+  - zefir
+  - swans
+  - ruby-labs
+  - onhires
+  - jump-app
+  - sardine
+  - careerswift.ai
+  - kosen-labs
+  - k1x
+  - passport
+  - revenuecat
+
+workable:
+  - pavago
+  - avomind
+  - rittman-analytics
+  - localstack
+
+greenhouse:
+  - splice
+  - gocardless
+  - checkr
+
+lever: []       # not yet live-verified against a real slug — add once confirmed
+
+smartrecruiters: []  # not yet live-verified against a real slug — add once confirmed
+
+recruitee: []   # not yet tested — add once confirmed

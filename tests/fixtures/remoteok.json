@@ -1,0 +1,22 @@
+[
+  {"legal": "Please attribute RemoteOK.com as a source if you use this data"},
+  {
+    "position": "Senior Data Engineer",
+    "company": "Alpaca",
+    "location": "Worldwide",
+    "url": "https://remoteok.com/remote-jobs/senior-data-engineer-alpaca-151988",
+    "apply_url": "https://remoteok.com/remote-jobs/senior-data-engineer-alpaca-151988",
+    "date": "2026-09-19T00:00:00+00:00",
+    "tags": ["data", "engineer", "python"],
+    "description": "100% distributed team."
+  },
+  {
+    "position": "Senior Backend Engineer",
+    "company": "SomeCo",
+    "location": "Worldwide",
+    "url": "https://remoteok.com/remote-jobs/senior-backend-engineer",
+    "date": "2026-09-19T00:00:00+00:00",
+    "tags": ["backend"],
+    "description": "not a data role, should be filtered out"
+  }
+]

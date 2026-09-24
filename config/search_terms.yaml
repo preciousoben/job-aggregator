@@ -1,0 +1,8 @@
+# Search terms used against the Tier-2 aggregator APIs (Himalayas, Remotive)
+# that accept a free-text query. RemoteOK and We Work Remotely are pulled in
+# full and filtered by title keyword instead (see their connectors).
+titles:
+  - "Data Analyst"
+  - "Data Engineer"
+  - "Analytics Engineer"
+  - "BI Analyst"

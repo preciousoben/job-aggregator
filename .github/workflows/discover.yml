@@ -1,0 +1,30 @@
+name: Discover new companies
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"  # weekly, Monday 06:00 UTC — this list changes slowly
+  workflow_dispatch: {}
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run discovery and update companies.yaml
+        run: python -m src.discovery.run_discovery
+
+      - name: Commit updated company list
+        run: |
+          git config user.name "job-aggregator-bot"
+          git config user.email "actions@github.com"
+          git add config/companies.yaml
+          git diff --cached --quiet || git commit -m "chore: refresh discovered company list"
+          git push

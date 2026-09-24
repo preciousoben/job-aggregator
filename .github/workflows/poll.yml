@@ -1,0 +1,43 @@
+name: Poll job sources
+
+on:
+  schedule:
+    # Hourly, on the hour, UTC. GitHub can delay a schedule trigger under
+    # load, so treat "within the hour" as the realistic freshness floor,
+    # not a guarantee — see the build notes for why sub-hourly isn't worth it.
+    - cron: "0 * * * *"
+  workflow_dispatch: {}  # lets you trigger a run manually from the Actions tab
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Write service account key
+        if: env.GOOGLE_SERVICE_ACCOUNT_JSON != ''
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+        run: echo "$GOOGLE_SERVICE_ACCOUNT_JSON" > service-account.json
+
+      - name: Run poller
+        env:
+          SHEET_ID: ${{ secrets.SHEET_ID }}
+          GOOGLE_SERVICE_ACCOUNT_JSON: service-account.json
+          VOYAGE_API_KEY: ${{ secrets.VOYAGE_API_KEY }}
+        run: python -m src.main
+
+      - name: Upload CSV fallback (only relevant if Sheets secrets aren't set)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: postings-csv
+          path: data/postings*.csv
+          if-no-files-found: ignore

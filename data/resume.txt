@@ -1,0 +1,38 @@
+PLACEHOLDER — replace this file with your actual resume text before turning
+on embedding-based scoring (see README "Setup step 3"). This is built from
+your stored profile facts only, as a stand-in so the pipeline runs end to
+end today; it's much thinner than your real resume and will produce worse
+fit scores until you swap it out.
+
+Precious Oben — Data Analyst / Data Engineer / Analytics Engineer
+
+Core technical stack: SQL (MySQL, PostgreSQL, BigQuery), Python (Pandas,
+NumPy), R, dbt, ETL/ELT pipelines, medallion architecture, data modeling,
+Power BI (PL-300 certified), Looker/LookML, Looker Studio, Tableau, GCP,
+BigQuery, Snowflake, Google Analytics, Git/GitHub, Odoo, ServiceNow,
+Dynamics 365.
+
+Experience: Data Analytics Instructor at Landmark University (SQL and
+Python, April 2024–present). Software Analyst at Cathena, financial systems
+and data (June–Sept 2024). Freelance data analyst, e-commerce (Dec 2023–May
+2024). Junior Data Analyst at Urologist-cm, clinical data pipelines (Jan–June
+2023).
+
+Education: MSc Computer Engineering, University of Buea (in progress, GPA
+3.85). MTech Computer Engineering, University of Buea (2021–2023, GPA 3.75,
+Best Graduating Student). BTech Computer Engineering, University of Buea
+(2018–2021).
+
+Certifications: Google Data Analytics Professional Certificate. Microsoft
+Power BI Data Analyst Associate (PL-300).
+
+Portfolio projects: FinFlow Analytics — end-to-end fintech payments pipeline
+using Python, Snowflake (medallion architecture), dbt Cloud, n8n, Power
+Automate, Power BI. SaaS Marketing Analytics — automated dbt reporting
+pipeline, reduced reporting turnaround from 2 days to under 4 hours (96%
+efficiency gain). ClickHouse technical evaluation for a Cameroonian telecom
+company (data warehouse replacement analysis).
+
+Seeking: remote Data Analyst, Data Engineer, Analytics Engineer, or BI
+Analyst roles, ideally at small companies (1-50 employees, up to 200), with
+international or EOR-capable employers open to hiring from Cameroon.
