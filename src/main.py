@@ -73,7 +73,11 @@ def fetch_all() -> list[Posting]:
     postings += _safe("RemoteOK", remoteok.fetch)
     postings += _safe("We Work Remotely", weworkremotely.fetch)
 
-    return [p for p in postings if p.title and p.url]
+    title_keywords = ("data analyst", "data engineer", "analytics engineer", "bi analyst", "business intelligence")
+    postings = [p for p in postings if p.title and p.url]
+    filtered = [p for p in postings if any(k in p.title.lower() for k in title_keywords)]
+    print(f"\n{len(postings)} postings with a title/url -> {len(filtered)} after filtering to target roles")
+    return filtered
 
 
 def _load_resume_text() -> str:

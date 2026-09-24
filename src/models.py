@@ -21,11 +21,12 @@ class Posting:
         if not self.posted_date:
             return None
         try:
-            dt = datetime.fromisoformat(self.posted_date.replace("Z", "+00:00"))
+            posted = str(self.posted_date)
+            dt = datetime.fromisoformat(posted.replace("Z", "+00:00"))
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
             return (datetime.now(timezone.utc) - dt).total_seconds() / 86400
-        except (ValueError, TypeError):
+        except (ValueError, TypeError, AttributeError):
             return None
 
     def dedupe_key(self) -> str:
