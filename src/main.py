@@ -16,6 +16,7 @@ from src.connectors import (
 )
 from src.models import Posting
 from src.eligibility import check as check_eligibility
+from src.remote_check import is_remote
 from src.scoring import score as score_posting
 from src.store import get_store
 
@@ -99,7 +100,7 @@ def run():
 
     resume_text = _load_resume_text()
     new_rows = []
-    skipped_dupe = skipped_stale = skipped_ineligible = 0
+    skipped_dupe = skipped_stale = skipped_ineligible = skipped_not_remote = 0
 
     for p in all_postings:
         if p.dedupe_key() in existing_urls:
@@ -113,6 +114,9 @@ def run():
         if not eligible:
             skipped_ineligible += 1
             continue
+        if not is_remote(p):
+            skipped_not_remote += 1
+            continue
         fit = score_posting(p.title, p.description, resume_text)
         new_rows.append(p.to_row(fit, eligible, note))
         existing_urls.add(p.dedupe_key())  # guard against dupes within this same run
@@ -121,7 +125,10 @@ def run():
     archived = store.archive_stale(MAX_AGE_DAYS)
 
     print(f"\n{len(new_rows)} new postings written")
-    print(f"skipped: {skipped_dupe} duplicate, {skipped_stale} stale (>{MAX_AGE_DAYS}d), {skipped_ineligible} hard-blocked")
+    print(
+        f"skipped: {skipped_dupe} duplicate, {skipped_stale} stale (>{MAX_AGE_DAYS}d), "
+        f"{skipped_ineligible} hard-blocked, {skipped_not_remote} no positive remote signal"
+    )
     print(f"{archived} previously-new rows archived for aging past {MAX_AGE_DAYS}d")
     return new_rows
 
